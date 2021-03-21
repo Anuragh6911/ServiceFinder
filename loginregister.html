@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>service finder</title>
+	<link rel="stylesheet" type="text/css" href="./css/loginregister.css">
+	<meta name="viewport" content="width=device-width", initial-scale="1">
+</head>
+<body>
+	<div class="parent">
+		        <div class="child">
+					<div class="child2">
+						<div>
+							<img src="./image/avatar.svg" class="img">
+						</div>
+				          <div class="child3">
+                            <form class="Login-Form">
+								<h2 class="title">Login</h2>
+
+								 <div class="email"> 
+                                     
+									<input type="text" class="input" placeholder="Email" size="30" name="email" required>
+								 </div>
+								 <div class="password">
+                                   
+									<input type="password" class="input" placeholder="Password" size="30" name="pass" required>  
+								 </div>
+								 
+								<div class="ff">
+									<a href="#" class="forget"></a><br>
+								</div>	
+								
+								 <div class="btnn">
+									<input type="submit" class="btn" value="Login">		
+								 </div>
+                                 <div class="message"> Not Register?
+                                    <a href="#" onclick="showHide()">Register</a>
+                                </div>
+                                 	
+                            </form>        
+                          </div>                      
+					</div>
+                    
+                    
+                   
+				          <div class="child3">
+                            <form class="Register-Form">
+								<h2 class="title">Register</h2>
+
+								 <div class="user"> 
+                                     
+									<input type="text" class="input" placeholder="User Name" size="30" name="username" required>
+								 </div>
+                                 <div class="email"> 
+                                     
+									<input type="text" class="input" placeholder="Email" size="30" name="email" required>
+								 </div>
+								 <div class="password">
+                                   
+									<input type="password" class="input" placeholder="Password" size="30" name="pass" required>  
+								 </div>
+                                 <div class="repassword">
+									<input type="password" class="input" placeholder="ReEnter-Password" size="30" name="pass" required>  
+								 </div>
+								 
+								<div class="ff">
+									<a href="#" class="forget"></a><br>
+								</div>	
+								
+								 <div class="btnn">
+									<input type="submit" class="btn1" value="Register">		
+								 </div>
+									
+                                 <div class="message"> Already Register?
+                                    <a href="#" onclick="showHide()"> login</a>
+                                </div>
+                               
+                            </form>        
+                            </div>  
+                                   
+		        </div>
+				
+     </div> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
+
+    <script>
+         $('.message a').click(function(){
+     $('form').animate({height:"toggle",opacity:"toggle"},"medium");
+ })
+    </script>
+	<script type="text/javascript" src="./js/loginregister.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
